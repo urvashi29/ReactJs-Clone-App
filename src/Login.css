@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Sans');
+
+body {
+    background: rgb(241, 239, 239);
+}
+
+form {
+    text-align: left;
+    margin-left: 200px;
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    color: rgba(54, 52, 52, 0.986);
+}
+
+.logo {
+    margin: 50px 0 0 350px;
+    height: 100px;
+    width: 180px;
+}
+
+.text-link {
+    color: rgba(54, 52, 52, 0.986);
+    padding-left: 160px;
+}
+
+#input-text {
+    border: 0;
+    border-bottom: 1px solid rgba(167, 156, 156, 0.877);
+    background: rgb(241, 239, 239);
+    outline: 0;
+    height: 40px;
+    font-size: 20px;
+    color: seagreen;
+}
+
+#input-field {
+    border: 0;
+    border-bottom: 1px solid rgba(167, 156, 156, 0.877);
+    background: rgb(241, 239, 239);
+    outline: 0;
+    height: 40px;
+    font-size: 20px;
+    color: seagreen;
+}
+
+::placeholder {
+    font-size: 20px;
+    color: darkgrey;
+}
+
+
+.login-button {
+    color: white;
+    font-size: 20px;
+    background: #F97C00;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    height: 50px;
+    width: 140px;
+    margin-left: 150px;
+}
+
+.login-text {
+    color: dimgrey;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+
+
+.flex-container {
+    display: flex;
+    align-items: stretch;
+}
+
+
+.firstDiv {
+    flex-grow: 12;
+}

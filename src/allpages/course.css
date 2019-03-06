@@ -1,0 +1,183 @@
+ body {
+     background: white;
+ }
+
+ .first {
+     padding-top: 30px;
+     height: 30px;
+     width: 100%;
+     background: white;
+ }
+
+
+ .hamburger {
+     background: black;
+     height: 3px;
+     width: 25px;
+     margin: 2px 0 0 30px;
+ }
+
+ .second img {
+     width: 30px;
+     height: 30px;
+     margin-top: -25px;
+     float: right;
+ }
+
+ .second span {
+     float: right;
+     margin-top: -25px;
+     margin-right: 25px;
+ }
+
+ /* doubt */
+ aside img {
+     width: 70px;
+     -webkit-filter: grayscale(100%);
+     filter: greyscale(100%);
+ }
+
+ aside {
+     width: 70px;
+     height: 100%;
+     background: rgb(53, 48, 48);
+     position: fixed;
+
+     /* -webkit-filter: grayscale(100%);
+     filter: greyscale(100%); */
+ }
+
+ header {
+     height: 50px;
+     width: 100%;
+     background: #dddddd;
+ }
+
+ header img {
+     width: 40px;
+     height: 40px;
+     margin: 5px 0 0 100px;
+ }
+
+ header span {
+     margin-left: 15px;
+     font-size: 20px;
+     margin-top: 10px;
+     position: absolute;
+ }
+
+ .third {
+     margin: 40px 0 0 120px;
+     font-size: 20px;
+     height: 60px;
+ }
+
+
+ .formDiv {
+     float: right;
+     margin-top: -50px;
+     margin-right: 40px;
+ }
+
+ form input {
+     height: 40px;
+     width: 300px;
+     background: rgba(238, 238, 238, 0.548);
+     padding: 10px;
+     box-sizing: border-box;
+     border: 0;
+ }
+
+ ::placeholder {
+     font-size: 15px;
+ }
+
+ form button {
+     box-sizing: border-box;
+     height: 40px;
+     width: 40px;
+     background: white;
+     border: 0;
+     color: grey;
+     font-size: 20px;
+ }
+
+ section {
+     height: 50px;
+     margin-top: 20px;
+     text-align: center;
+ }
+
+ .Table {
+     height: 400px;
+     margin-top: 20px;
+     padding-top: 20px;
+     background: rgba(243, 237, 237, 0.945);
+ }
+
+ table {
+     border-collapse: collapse;
+     margin-left: 100px;
+     width: 90%;
+     border: 1px solid rgba(170, 162, 162, 0.548);
+ }
+
+ td img {
+     height: 20px;
+     width: 20px;
+ }
+
+ td,
+ th {
+     text-align: left;
+     padding: 15px;
+     color: rgba(44, 39, 39, 0.753);
+ }
+
+ tr:nth-child(odd) {
+     background: #dddddd;
+ }
+
+ .drop-down {
+     background: #dddddd;
+ }
+
+ tr:hover {
+     color: rgb(69, 177, 159);
+ }
+
+ option:hover {
+     font-size: 15px;
+     color: orangered;
+ }
+
+ select {
+     width: 80px;
+     height: 30px;
+ }
+
+ @media (max-width:900px) {
+     header {
+         width: 900px;
+     }
+
+     .second {
+         width: 900px;
+     }
+
+     .first {
+         width: 900px;
+     }
+
+     .third {
+         width: 800px;
+     }
+
+     table {
+         width: 780px;
+     }
+
+     .Table {
+         width: 900px;
+     }
+ }
