@@ -1,13 +1,14 @@
 import React from 'react';
-const Settings = () => {
+import './course.css'
+const Profile = () => {
     return (
         <div>
             <header>
                 <img src={require('./home.jpg')} alt='home' />
-                <span>&#62; Settings &#62; Users</span>
+                <span>&#62;  User Profile</span>
             </header>
         </div>
     )
 
 }
-export default Settings;
+export default Profile;

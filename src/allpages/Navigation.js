@@ -14,19 +14,19 @@ const Navigate = () => {
                 </div>
             </div>
             <aside>
-                <NavLink to='/dashboard'>
+                <NavLink to='/dashboard' title='Dashboard'>
                     <img src={require('./dashboard.png')} alt='dashboard' />
                 </NavLink>
-                <NavLink to='/profile'>
+                <NavLink to='/profile' title='Profile'>
                     <img src={require('./profile.png')} alt='profile' />
                 </NavLink>
-                <NavLink to='/courses'>
+                <NavLink to='/courses' title='Courses'>
                     <img src={require('./courses.jpg')} alt='courses' />
                 </NavLink>
-                <Link to='/drives'>
+                <Link to='/drives' title='Drives'>
                     <img src={require('./drives.jpg')} alt='drivers' />
                 </Link>
-                <NavLink to='/settings'>
+                <NavLink to='/settings' title='Settings'>
                     <img src={require('./setting1.png')} alt='settings' />
                 </NavLink>
             </aside>

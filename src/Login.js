@@ -9,6 +9,7 @@ class Login extends Component {
         //DOUBT how to redirect to next page
         // this.props.history.location('/first')
         // this.props.history.redirect('/first')
+        this.props.history.goForward('./first')
 
     }
     render() {

@@ -4,7 +4,10 @@ import { Route, BrowserRouter } from 'react-router-dom';
 import Login from './Login';
 import './App.css';
 import Course from './allpages/Course';
+import Profile from './allpages/Profile';
 import Settings from './allpages/Setting';
+import Drives from './allpages/Drives';
+import Dashboard from './allpages/Dashboard';
 class App extends Component {
   state = {
     courses: [
@@ -14,30 +17,36 @@ class App extends Component {
       { name: 'Python', modules: 2, test: 7, startDate: 'May 31, 2018', EndDate: 'May 31, 2018', Status: 'Not Active' }
     ]
   }
-  // searchCourse = (it) => {
-  //   let item = it.toUpperCase()
-  //   let match = this.state.courses.filter(x => x.name.includes(item));
-  //   // console.log(match)
-  // }
+  SearchCourse = (it) => {
+    let item = it.toUpperCase()
+    let match = this.state.courses.filter(x => x.name.includes(item));
+    console.log(match)
+    if (match === this.state.name) {
+      this.courses.style.display = 'block';
+    }
+    // else {
+    //   this.courses.style.display = 'none';
+    // }
+    console.log(match)
+  }
   render() {
     return (
       // doubt
       //render={(props)=><Course {...props}}//to pass props
       <BrowserRouter>
         <div>
-          {/* <Course courses={this.state.courses} searchCourse={this.searchCourse} /> */}
           {/* Here exact path will initially open my page with courses */}
           {/* <Login />
           <Route path='/login' component={Login} /> */}
           <Navigate />
+          {/* courses=>this.state.courses */}
           {/* DOUBT path to first webpage */}
           <Route exact path='/first' component={Settings} />
-          <Route path='/courses' render={(courses) => <Course {...this.state.courses} />} />
-          {/* <Route path='/courses' component={Course} /> */}
-          < Route path='/settings' component={Settings} />
-          {/* <Route path='./dashboard' component={Dashboard} />
-          <Route path='./profile' component={Profile} />
-          <Route path='./' component={Drives} /> */}
+          <Route path='/courses' render={(courses) => <Course courses={this.state.courses} SearchCourse={this.SearchCourse} />} />
+          <Route path='/profile' component={Profile} />
+          <Route path='/settings' component={Settings} />
+          <Route path='/dashboard' component={Dashboard} />
+          <Route path='/drives' component={Drives} />
         </div>
       </BrowserRouter>
     );

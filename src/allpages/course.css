@@ -1,183 +1,190 @@
- body {
-     background: white;
- }
+.first {
+    padding-top: 30px;
+    height: 30px;
+    width: 100%;
+    background: white;
+}
 
- .first {
-     padding-top: 30px;
-     height: 30px;
-     width: 100%;
-     background: white;
- }
+.hamburger {
+    background: black;
+    height: 3px;
+    width: 25px;
+    margin: 2px 0 0 30px;
+}
 
+.second img {
+    width: 30px;
+    height: 30px;
+    margin-top: -25px;
+    float: right;
+}
 
- .hamburger {
-     background: black;
-     height: 3px;
-     width: 25px;
-     margin: 2px 0 0 30px;
- }
+.second span {
+    float: right;
+    margin-top: -25px;
+    margin-right: 25px;
+}
 
- .second img {
-     width: 30px;
-     height: 30px;
-     margin-top: -25px;
-     float: right;
- }
+/* doubt */
+aside img {
+    width: 70px;
+    -webkit-filter: grayscale(1);
+    filter: greyscale(1);
+}
 
- .second span {
-     float: right;
-     margin-top: -25px;
-     margin-right: 25px;
- }
-
- /* doubt */
- aside img {
-     width: 70px;
-     -webkit-filter: grayscale(100%);
-     filter: greyscale(100%);
- }
-
- aside {
-     width: 70px;
-     height: 100%;
-     background: rgb(53, 48, 48);
-     position: fixed;
-
-     /* -webkit-filter: grayscale(100%);
+aside {
+    width: 70px;
+    height: 100%;
+    background: rgb(53, 48, 48);
+    position: fixed;
+    /* -webkit-filter: grayscale(100%);
      filter: greyscale(100%); */
- }
+}
 
- header {
-     height: 50px;
-     width: 100%;
-     background: #dddddd;
- }
+header {
+    height: 50px;
+    width: 100%;
+    background: #dddddd;
+}
 
- header img {
-     width: 40px;
-     height: 40px;
-     margin: 5px 0 0 100px;
- }
+header img {
+    width: 40px;
+    height: 40px;
+    margin: 5px 0 0 100px;
+}
 
- header span {
-     margin-left: 15px;
-     font-size: 20px;
-     margin-top: 10px;
-     position: absolute;
- }
+header span {
+    margin-left: 15px;
+    font-size: 15px;
+    margin-top: 15px;
+    position: absolute;
+}
 
- .third {
-     margin: 40px 0 0 120px;
-     font-size: 20px;
-     height: 60px;
- }
+.third {
+    padding: 20px 0 0 120px;
+    height: 100px;
+    /* padding-left: 120px; */
+    font-size: 20px;
+    height: 100px;
+    background: white;
+}
+
+.formDiv {
+    float: right;
+    display: flex;
+    flex-direction: row;
+    margin-top: -50px;
+    margin-right: 40px;
+}
+
+.formDiv input {
+    height: 40px;
+    font-size: 20px;
+    width: 300px;
+    background: rgba(238, 238, 238, 0.548);
+    padding: 10px;
+    box-sizing: border-box;
+    border: 0;
+
+}
+
+.formDiv ::placeholder {
+    font-size: 16px;
+}
+
+.formDiv button {
+    /* box-sizing: border-box; */
+    height: 40px;
+    width: 40px;
+    background: rgba(238, 238, 238, 0.548);
+    border: 0;
+    color: grey;
+    font-size: 20px;
+}
+
+section {
+    height: 50px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.Table {
+    height: 350px;
+    margin-top: 10px;
+    padding-top: 20px;
+    background: rgba(243, 237, 237, 0.945);
+}
+
+table {
+    border-collapse: collapse;
+    margin-left: 100px;
+    width: 90%;
+    border: 1px solid rgba(170, 162, 162, 0.548);
+}
+
+td img {
+    height: 20px;
+    width: 20px;
+    float: right;
+}
 
 
- .formDiv {
-     float: right;
-     margin-top: -50px;
-     margin-right: 40px;
- }
+td,
+th {
+    text-align: left;
+    padding: 15px;
+    color: rgba(44, 39, 39, 0.753);
+}
 
- form input {
-     height: 40px;
-     width: 300px;
-     background: rgba(238, 238, 238, 0.548);
-     padding: 10px;
-     box-sizing: border-box;
-     border: 0;
- }
+tr:nth-child(3) {
+    background: white;
+}
 
- ::placeholder {
-     font-size: 15px;
- }
+tr:nth-child(2) {
+    background: white;
+}
 
- form button {
-     box-sizing: border-box;
-     height: 40px;
-     width: 40px;
-     background: white;
-     border: 0;
-     color: grey;
-     font-size: 20px;
- }
 
- section {
-     height: 50px;
-     margin-top: 20px;
-     text-align: center;
- }
+.drop-down {
+    background: #dddddd;
+}
 
- .Table {
-     height: 400px;
-     margin-top: 20px;
-     padding-top: 20px;
-     background: rgba(243, 237, 237, 0.945);
- }
+tr:hover {
+    color: rgb(69, 177, 159);
+}
 
- table {
-     border-collapse: collapse;
-     margin-left: 100px;
-     width: 90%;
-     border: 1px solid rgba(170, 162, 162, 0.548);
- }
+option:hover {
+    font-size: 15px;
+    color: orangered;
+}
 
- td img {
-     height: 20px;
-     width: 20px;
- }
+select {
+    width: 80px;
+    height: 30px;
+}
 
- td,
- th {
-     text-align: left;
-     padding: 15px;
-     color: rgba(44, 39, 39, 0.753);
- }
+@media (max-width:900px) {
+    header {
+        width: 900px;
+    }
 
- tr:nth-child(odd) {
-     background: #dddddd;
- }
+    .second {
+        width: 900px;
+    }
 
- .drop-down {
-     background: #dddddd;
- }
+    .first {
+        width: 900px;
+    }
 
- tr:hover {
-     color: rgb(69, 177, 159);
- }
+    .third {
+        width: 800px;
+    }
 
- option:hover {
-     font-size: 15px;
-     color: orangered;
- }
+    table {
+        width: 780px;
+    }
 
- select {
-     width: 80px;
-     height: 30px;
- }
-
- @media (max-width:900px) {
-     header {
-         width: 900px;
-     }
-
-     .second {
-         width: 900px;
-     }
-
-     .first {
-         width: 900px;
-     }
-
-     .third {
-         width: 800px;
-     }
-
-     table {
-         width: 780px;
-     }
-
-     .Table {
-         width: 900px;
-     }
- }
+    .Table {
+        width: 900px;
+    }
+}
