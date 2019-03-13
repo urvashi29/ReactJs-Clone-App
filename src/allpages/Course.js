@@ -71,7 +71,7 @@ class Course extends Component {
                         </tbody>
                     </table>
                 </div>
-            </div >
+            </div>
         )
     }
 }

@@ -13,23 +13,35 @@ const Navigate = () => {
                     <span>Urvashi Singla</span>
                 </div>
             </div>
-            <aside>
-                <NavLink to='/dashboard' title='Dashboard'>
-                    <img src={require('./dashboard.png')} alt='dashboard' />
-                </NavLink>
-                <NavLink to='/profile' title='Profile'>
-                    <img src={require('./profile.png')} alt='profile' />
-                </NavLink>
-                <NavLink to='/courses' title='Courses'>
-                    <img src={require('./courses.jpg')} alt='courses' />
-                </NavLink>
-                <Link to='/drives' title='Drives'>
-                    <img src={require('./drives.jpg')} alt='drivers' />
-                </Link>
-                <NavLink to='/settings' title='Settings'>
-                    <img src={require('./setting1.png')} alt='settings' />
-                </NavLink>
-            </aside>
+            <div className='aside-content'>
+                <aside>
+                    <div>
+                        <NavLink to='/dashboard' title='Dashboard'>
+                            <img src={require('./dashboard.png')} alt='dashboard' />
+                        </NavLink>
+                    </div>
+                    <div>
+                        <NavLink to='/profile' title='Profile'>
+                            <img src={require('./profile.png')} alt='profile' />
+                        </NavLink>
+                    </div>
+                    <div>
+                        <NavLink to='/courses' title='Courses'>
+                            <img src={require('./courses.jpg')} alt='courses' />
+                        </NavLink>
+                    </div>
+                    <div>
+                        <NavLink to='/drives' title='Drives'>
+                            <img src={require('./drives.jpg')} alt='drivers' />
+                        </NavLink>
+                    </div>
+                    <div>
+                        <NavLink to='/settings' title='Settings'>
+                            <img src={require('./setting1.png')} alt='settings' />
+                        </NavLink>
+                    </div>
+                </aside>
+            </div>
         </div>
     )
 }

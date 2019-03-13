@@ -27,7 +27,7 @@ class Login extends Component {
                         <button className="login-button">Login</button>
                     </form>
                 </div>
-                <img className="image" src={require('./logo.png')} alt="hc" />
+                <img src={require('./logo.png')} alt="hc" />
             </div>
         );
     }

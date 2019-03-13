@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Navigate from './allpages/Navigation';
 import { Route, BrowserRouter } from 'react-router-dom';
-import Login from './Login';
+// import Login from './Login';
 import './App.css';
 import Course from './allpages/Course';
 import Profile from './allpages/Profile';
@@ -36,10 +36,10 @@ class App extends Component {
       <BrowserRouter>
         <div>
           {/* Here exact path will initially open my page with courses */}
-          <Login />
-          <Route path='/login' component={Login} />
-          <Navigate /> */}
-          {/* courses=>this.state.courses
+          {/* <Login />
+          <Route path='/login' component={Login} /> */}
+          <Navigate />
+          {/* courses=>this.state.courses */}
           {/* DOUBT path to first webpage */}
           <Route exact path='/first' component={Settings} />
           <Route path='/courses' render={(courses) => <Course courses={this.state.courses} SearchCourse={this.SearchCourse} />} />

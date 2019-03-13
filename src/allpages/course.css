@@ -25,21 +25,36 @@
     margin-right: 25px;
 }
 
-/* doubt */
+/* doubt greyscale */
 aside img {
-    width: 70px;
-    -webkit-filter: grayscale(1);
-    filter: greyscale(1);
+    width: 50px;
+    height: 50px;
+    margin: 10px 0 0 10px;
+    border-radius: 50px;
+    /* -webkit-filter: grayscale(1);
+    filter: greyscale(1); */
 }
 
+aside div:hover {
+    border-left: 5px solid orangered;
+}
+
+.aside-content {
+    position: relative;
+    height: 100%;
+}
+
+/* doubt position of aside nad where to put jquery code*/
 aside {
     width: 70px;
-    height: 100%;
-    background: rgb(53, 48, 48);
-    position: fixed;
+    height: 1200px;
+    background-color: rgb(49, 45, 45);
+    position: absolute;
+    /* position: fixed; */
     /* -webkit-filter: grayscale(100%);
      filter: greyscale(100%); */
 }
+
 
 header {
     height: 50px;
@@ -50,6 +65,7 @@ header {
 header img {
     width: 40px;
     height: 40px;
+    border-radius: 20px;
     margin: 5px 0 0 100px;
 }
 
@@ -61,7 +77,7 @@ header span {
 }
 
 .third {
-    padding: 20px 0 0 120px;
+    padding: 20px 0 0 100px;
     height: 100px;
     font-size: 20px;
     height: 100px;
@@ -106,10 +122,7 @@ section {
 }
 
 .Table {
-    height: 350px;
-    margin-top: 10px;
     padding-top: 20px;
-    background: rgba(243, 237, 237, 0.945);
 }
 
 table {
@@ -125,7 +138,6 @@ td img {
     float: right;
 }
 
-
 td,
 th {
     text-align: left;
@@ -134,10 +146,10 @@ th {
 }
 
 tr:nth-child(3) {
-    background: white;
+    background: rgba(243, 237, 237, 0.945)
 }
 
-tr:nth-child(2) {
+tr:nth-child(even) {
     background: white;
 }
 
@@ -147,12 +159,11 @@ tr:nth-child(2) {
 }
 
 tr:hover {
-    color: rgb(69, 177, 159);
+    background-color: #dddddd;
 }
 
 option:hover {
     font-size: 15px;
-    color: orangered;
 }
 
 select {
