@@ -36,10 +36,10 @@ class App extends Component {
       <BrowserRouter>
         <div>
           {/* Here exact path will initially open my page with courses */}
-          {/* <Login />
-          <Route path='/login' component={Login} /> */}
-          <Navigate />
-          {/* courses=>this.state.courses */}
+          <Login />
+          <Route path='/login' component={Login} />
+          <Navigate /> */}
+          {/* courses=>this.state.courses
           {/* DOUBT path to first webpage */}
           <Route exact path='/first' component={Settings} />
           <Route path='/courses' render={(courses) => <Course courses={this.state.courses} SearchCourse={this.SearchCourse} />} />

@@ -60,8 +60,8 @@ form {
     border-radius: 5px;
     border: 0;
     cursor: pointer;
-    height: 50px;
-    width: 140px;
+    height: 45px;
+    width: 120px;
     margin-left: 150px;
 }
 
@@ -80,4 +80,14 @@ form {
 
 .firstDiv {
     flex-grow: 12;
+}
+
+@media (max-width: 600px) {
+    #input-field {
+        width: 300px;
+    }
+
+    #input-text {
+        width: 300px;
+    }
 }

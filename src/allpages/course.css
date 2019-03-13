@@ -63,7 +63,6 @@ header span {
 .third {
     padding: 20px 0 0 120px;
     height: 100px;
-    /* padding-left: 120px; */
     font-size: 20px;
     height: 100px;
     background: white;
@@ -85,7 +84,6 @@ header span {
     padding: 10px;
     box-sizing: border-box;
     border: 0;
-
 }
 
 .formDiv ::placeholder {
@@ -93,7 +91,6 @@ header span {
 }
 
 .formDiv button {
-    /* box-sizing: border-box; */
     height: 40px;
     width: 40px;
     background: rgba(238, 238, 238, 0.548);
